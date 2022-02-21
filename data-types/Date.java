@@ -14,10 +14,10 @@ month = 02;
 year = 2022;
 //after much trial and error, I realized I had my print statements ahead of my variables so the compiler couldn't read my values
 System.out.print("The date is ");
-System.out.print(month2);
-System.out.print(" ");
+System.out.print(month);
+System.out.print("/");
 System.out.print(day);
-System.out.print(", ");
+System.out.print("/");
 System.out.println(year);
 
 System.out.print("American Format: ");
