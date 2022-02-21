@@ -25,6 +25,13 @@ System.out.println("number: " +number);
 System.out.println("value: " +value);
 System.out.println("sum: " +sum);
 
+System.out.println(17 * 32);
+
+System.out.print("Hello, ");
+System.out.println("World!");
+//this will print on one line bc the print is first followed by println
+
+
 }
 
 
