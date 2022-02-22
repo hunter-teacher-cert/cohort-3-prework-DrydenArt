@@ -22,6 +22,7 @@ public class Guess {
     difference = line - number;
   
     System.out.println("You were off by: " + difference);
+    //I can't figure out how to tell it to read which ever number (the guess or the generated number) is higher before figuring out the difference. Currently, if the line is smaller than the number, it creates a negative integer.//
 
 
 
