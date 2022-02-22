@@ -1,19 +1,19 @@
 import java.util.Scanner;
-//this must written before you can use Scanner.  It imports the scanner//
+//this must be written before you can use Scanner.  It imports the scanner//
 
 public class Echo {
 
   public static void main(String[] args) {
-    //String line;
-    //Scanner in = new Scanner(System.in);//this line declares a Scanner variable named in and creates a new Scanner that takes input from System.in//
+    String line;
+    Scanner in = new Scanner(System.in);//this line declares a Scanner variable named in and creates a new Scanner that takes input from System.in//
 
-    //System.out.print("Type something: ");
-    //line = in.nextLine();
-    //System.out.println("You said: " + line);
+    System.out.print("Type something: ");
+    line = in.nextLine();
+    System.out.println("You said: " + line);
 
-    //System.out.print("Type something else: ");
-    //line = in.nextLine();
-    //System.out.println("You also said: " + line);
+    System.out.print("Type something else: ");
+    line = in.nextLine();
+    System.out.println("You also said: " + line);
     
     //This example is on page 35 of ThinkJava
 
@@ -25,14 +25,7 @@ public class Echo {
     //Token = hour
     //a clear graphic is on page 36
 
-    int inch;
-    double cm;
-    Scanner in = new Scanner(System.in);
-    System.out.print("How many inches? ");
-    inch = in.nextInt();
-    cm = inch * 2.54;
-    System.out.print(inch + " in = ");
-    System.out.println(cm + " cm");
+    
   
 
 
