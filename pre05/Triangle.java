@@ -4,19 +4,20 @@ import java.util.*;
 public class Triangle {
 
   public static boolean isTriangle(int a, int b, int c) {
-  if (a > b + c || b > a + c || c > a + b){
-    System.out.println("False");    
+    boolean flagTriangle;
+    if (a > b + c || b > a + c || c > a + b){
+        flagTriangle = false;    
   }
   else{
-    System.out.println("True");
+    flagTriangle = true;
     }
-    return result;
+    return flagTriangle;
   }
   
 
   public static void main(String[] args) {
-    
-    System.out.println("This is a triangle: " + result);
-    isTriangle(2,2,2);
+    boolean flagTriangle = isTriangle(2, 2, 12);
+    System.out.println("This is a triangle: " + flagTriangle);
   }
 } 
+//this is exercise 
