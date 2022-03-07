@@ -16,4 +16,4 @@ I wug.
 3. What happens if you invoke baffle (); at the end of the ping method?  The program will keep repeating wug. on new lines --why? 
  because it will it continue to loop between the ping(); method and  the baffle(); method, since baffle(); invokes ping(); and ping inovkes baffle();
 
-4.  I checked my answers by compiling and running ReadCode.java. Once I ran it, I saw that I had interpreted the code correctly and predicted the answer to #4 correctly as well. What I found was that it will reapeat wug. on new lines, but only to a certain number of lines. 
+4.  I checked my answers by compiling and running ReadCode.java. Once I ran it, I saw that I had interpreted the code correctly and predicted the answer to #3 correctly as well. What I found was that it will reapeat wug. on new lines, but only to a certain number of lines. 
