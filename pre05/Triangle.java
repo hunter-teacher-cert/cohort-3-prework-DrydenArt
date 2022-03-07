@@ -20,4 +20,4 @@ public class Triangle {
     System.out.println("This is a triangle: " + flagTriangle);
   }
 } 
-//this is exercise 
+//this is exercise 6.3 on page 100 of Think Java

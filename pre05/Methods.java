@@ -20,3 +20,4 @@ public class Methods{
 
   }
 }
+//This is exercise 6.2 on page 100 of Think Java
