@@ -32,7 +32,8 @@ public class Loops {
     }
   }
 
-  public static double squareRoot() {
+  public static double squareRoot(double a) {
+    double a = 9;
     
   }
 
