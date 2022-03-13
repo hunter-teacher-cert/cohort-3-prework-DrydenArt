@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class While { //page 106
+public class While { //page 106 - 109
 
   public static void countdown(int n) {
     while (n > 0) { //evaluate the condition
@@ -24,18 +24,47 @@ public class While { //page 106
 
   public static void log(int i) {
     //int i = 1;
-    while (i < 10) {
+    final double LOG2 = Math.log(2);
+    while (i < 100) {
       double x = i;
-      System.out.println(x + "  " + Math.log(x) / Math.log(2));
+      System.out.println(x + "  " + Math.log(x) / LOG2);
       i = i +1;
     }
   }
 
+  public static void printRow(int n, int cols) {
+    int i = 1;
+    while (i <= cols) {
+      System.out.printf("%4d", n * i);
+      i = i + 1;
+    }
+    System.out.println();
+  }
+
+  
+  public static void printTable(int rows) {
+    int i = 1;
+    while (i <= rows) {
+      printRow(i, i);
+      i = i + 1;
+    }
+    System.out.println();
+  }
+
+  public static void printTable2(int rows) {
+    for (int i = 1; i <= rows; i = i + 1) {
+      printRow(i, rows);
+    }
+  }
+    
   public static void main(String[] args){
     System.out.println("here we go again");
-    countdown(10);
-    sequence(3);
-    log(1);
+    //countdown(10);
+    //sequence(3);
+    //log(1);
+    //mult(3);
+    printTable2(7);
+    
     
   }
 }
