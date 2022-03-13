@@ -5,18 +5,36 @@ public class Methods{
 //tests whether a number is divisible by another
   //n is the integer to be tested, m is the integer to divide, return true if m is not 0 and n is divisible by m//
   public static boolean isDivisible(int n, int m){
-    boolean flagDiv;
-    if (m != 0 && n % m == 0){
+    boolean flagDiv; // = isDivisible(n, m);
+      if (m != 0 && n % m == 0) {
       return flagDiv = true;
+      //System.out.println("Is it divisible? " + flagDiv);
     }else{
       return flagDiv = false;
+      //System.out.println("Is it divisible? " + flagDiv);
     }
-    //why don't I need my return statement?//
   }
+  
+
+  public static boolean isTriangle(int a, int b, int c) {
+    boolean flagTriangle; // = isTriangle(a, b, c);
+    if (a > b + c || b > a + c || c > a + b){
+        flagTriangle = false;    
+        //System.out.println("Is this a triangle? " + flagTriangle);
+  }
+  else{
+    flagTriangle = true;
+    }
+    return flagTriangle;
+    //System.out.println("Is this a triangle? " + flagTriangle);
+  }
+  
 
   public static void main(String[] args){
-  boolean flagDiv = isDivisible(7, 3);
-  System.out.println("Is it divisible? " + flagDiv);
+  isDivisible(7, 3);
+    System.out.println("Is it divisible? " + boolean flagDiv);
+  isTriangle(2, 2, 12);
+    System.out.println("Is this a triangle? " + boolean flagTriangle);
 
   }
 }

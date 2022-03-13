@@ -31,16 +31,21 @@ public class Loops {
       }
     }
   }
-
+  //square root: x1 = (xo + a/xo)/2
   public static double squareRoot(double a) {
     double a = 9;
+    double firstGuess = a/2;
+    double newEstimate = a/2;
+    if (Math.abs(a/2 < .000001);
+    
     
   }
 
 
   public static void main(String[] args) {
-    System.out.print("Exercises 1, 2, 3 and 4");
+    System.out.print("Exercises 2, 3 and 4");
     System.out.println("from Think Java, 7.9:");
-    printTable2(1);
+    //printTable2(1);
+    squareRoot();
   }
 }
