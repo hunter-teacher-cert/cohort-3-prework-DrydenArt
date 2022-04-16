@@ -35,29 +35,33 @@ public class Loops {
   public static double squareRoot(double a) {
     double x0;
     double x1 = a/2;
+    double interval = 0;
     do { x0 = x1;
       x1 = (x0 + a/x0) /2;
-      } while (Math.abs(x1 - x0) <= .000001);
+      interval = Math.abs(x1 - x0);
+      System.out.println(interval);
+      } while (interval > .000001);
     return x1;
     
   }
 
   //Exercise 3 - power
-  public static double power(double x, int n) {
-    double p = 1;
-    for (int 1 = 1; i <= n; i += 1); {
-      p = p * x;
-    }
-  return p;
+  //public static double power(double x, int n) {
+    //double p = 1;
+    //for (int 1 = 1; i <= n; i += 1); {
+      //p = p * x;
+   // }
+  //return p;
     
-  }
+  //}
 
 
   public static void main(String[] args) {
     System.out.print("Exercises 2, 3 and 4");
-    System.out.println("from Think Java, 7.9:");
+    System.out.println(" from Think Java, 7.9:");
     //printTable2(1);
-    squareRoot();
-    power();
+    //squareRoot(9);
+    System.out.println(squareRoot(9.0));
+    //power(2);
   }
 }

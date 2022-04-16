@@ -56,5 +56,6 @@ public class Validate {
   public static void main(String[] args) {
     System.out.println("Do-while, break, and continue:");
     scanDouble3();
+    scanDouble();
   }
 }
