@@ -14,7 +14,6 @@ public class Power {
   }
 
 
-
   public static void main(String[] args) {
     System.out.println("Exercise 6.9, page 103");
     double x = 5;

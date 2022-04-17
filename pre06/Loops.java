@@ -45,23 +45,39 @@ public class Loops {
     
   }
 
+  public static double power (double x, int n){
+    double result = 1;
+    for (int i = 0; i < n; i++){
+      result *= x;
+    } 
+    return result;
+    }
+   
+  
+
   //Exercise 3 - power
   //public static double power(double x, int n) {
     //double p = 1;
     //for (int 1 = 1; i <= n; i += 1); {
-      //p = p * x;
-   // }
+     // p = p * x;
+   //}
   //return p;
     
-  //}
+ // }
 
 
   public static void main(String[] args) {
     System.out.print("Exercises 2, 3 and 4");
     System.out.println(" from Think Java, 7.9:");
+    System.out.println("Square Root:");
     //printTable2(1);
     //squareRoot(9);
     System.out.println(squareRoot(9.0));
-    //power(2);
+    System.out.println("Power:");
+    double x = 5;
+    int n = 2;
+    double xn = power(x,n);
+    System.out.println(xn);
+    //System.out.println(power(2));
   }
 }
