@@ -54,12 +54,30 @@ public class MorePractice {
     int f = inRange(scores, 0, 60);
 
     //making a histogram
+    //int[] counts = new int[100];
+    //for (int i = 0; i < scores.length; i++) {
+     // int index = scores[i];
+      //counts[index]++;
+    //}
+    
+    //histogram with storage for 100 counters, but not efficient
+    //int[] counts = new int[100];
+    //for (int i = 0; i < counts.length; i++) {
+      //counts[i] = inRange(scores, i, i + 1);
+    //}
+
+    
+    //histogram traverses scores only once, more efficient
+    //int[] counts = new int[100];
+    //for (int i = 0; i < scores.length; i++) {
+      //int index = scores[i];
+      //counts[index]++;
+    //}
+
+    //histogram with enhanced loop, most efficient, page 133 T.J.
     int[] counts = new int[100];
-    for (int i = 0; i < scores.length; i++) {
-      int index = scores[i];
-      counts[index]++;
+    for (int score : scores) {
+      counts[score]++;
     }
-    
-    
   }
 }
