@@ -26,10 +26,14 @@ public class Array {
     a[2] = 3.0;
     a[3] = 4.0;
     a[4] = 5.0;
-    powArray(a, 2.0);
-    //values = new values [5];
-    values = new double[5];
     System.out.println(Arrays.toString(a));
+    powArray(a, 2.0);
+    double[] values;
+    //double[] values = new double[a.length];
+    values = powArray(a, 2.0);
+    System.out.println(Arrays.toString(values));
+    //values = new values [5];
+    //final double[] powArray = new values[5];
     //System.out.println(Arrays.toString(values));
     //System.out.println(powArray[i]);
     //System.out.println(powArray[values]);
