@@ -80,7 +80,7 @@ public class Practice8 {
     double [] b = Arrays.copyOf(a, a.length);
     //traversal (p128 Think Java)
     for (int i = 0; i < a.length; i++) {
-      a[i] = Math.pow(a[i], 2.0);
+      a[i] = Math.pow(a[i], 2.0);//squares the elements of a double array
     }
     int numValues = 8;
     int[] array = randomArray(numValues);
