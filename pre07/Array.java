@@ -6,12 +6,11 @@ public class Array {
 
   public static double [] powArray(double [] a, double power) {
     double[] values = new double[a.length];
-    double power;
     for (int i = 0; i < a.length; i++){
       values[i] = Math.pow(a[i], power);//p128: squares the double array
     }
     return values;
-    //System.out.println(array[i]);
+    //System.out.println(values);
   }
 
   //public static int histogram()
@@ -19,9 +18,19 @@ public class Array {
 
   public static void main(String[] args) {
     System.out.println("Exercise 8.1 from Think Java, page 135");
-    //double [] powArray = new double [5];
-    double [] powArray = {1.0, 2.0, 3.0, 4.0, 5.0};
-    System.out.println(powArray(values));
+    double[] a;
+    a = new double [5];
+    double power = 2.0;
+    a[0] = 1.0;
+    a[1] = 2.0;
+    a[2] = 3.0;
+    a[3] = 4.0;
+    a[4] = 5.0;
+    powArray(a, 2.0);
+    //values = new values [5];
+    values = new double[5];
+    System.out.println(Arrays.toString(a));
+    //System.out.println(Arrays.toString(values));
     //System.out.println(powArray[i]);
     //System.out.println(powArray[values]);
     //System.out.println(powArray[return]);
