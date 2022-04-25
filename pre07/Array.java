@@ -41,11 +41,8 @@ public class Array {
     int[] counts = new int[100];
     histogram(counts, 99);
     int[] counter;
-    //scores = 99;
     counter = histogram(counts, 99);
     int scores;
-    //int scores = counter; 
-    //int[] element = ;
     System.out.println(Arrays.toString(counter));
   
 
