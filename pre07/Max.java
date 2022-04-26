@@ -4,7 +4,7 @@ import java.util.Arrays;
 public class Max {
 
   public static int[] indexOfMax(int[] a) {
-    int index = 0;
+    int index = 2;
     for (int i = 1; i < a.length; i++) {
       if (a[i] > a[index]){
         index = i;
@@ -23,8 +23,7 @@ public class Max {
     a[1] = 3;
     a[2] = 16;
     indexOfMax(a);
-    int index;
-    index = indexOfMax(a);
+    //indexOfMax(a);
     System.out.println(a);
   }
 }

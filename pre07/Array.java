@@ -14,6 +14,7 @@ public class Array {
 
   public static int[] histogram(int[] counts, int scores){
     int[] counter = new int[100];
+    //int score = 0;
     for (int score : counts) {
       counter[scores]++;
     }
@@ -42,7 +43,7 @@ public class Array {
     histogram(counts, 99);
     int[] counter;
     counter = histogram(counts, 99);
-    int scores;
+    //int score = 1;
     System.out.println(Arrays.toString(counter));
   
 
