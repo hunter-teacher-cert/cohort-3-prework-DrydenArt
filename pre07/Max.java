@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Max {
 
-  public static int[] indexOfMax(int[] a) {
+  public static int indexOfMax(int[] a) {
     int index = 0;
     //int[] index;
     for (int i = 1; i < a.length; i++) {
@@ -31,10 +31,10 @@ public class Max {
     a[0] = 1;
     a[1] = 2;
     a[2] = 3;
-    indexOfMax(a); //how to I call the method: a? 3?
+    //indexOfMax(a); //how to I call the method: a? 3?
     //int index = 0; //I don't know if I need this, it keeps causing issues
-    int index;
-    index = indexOfMax(a);
-    System.out.println(Arrays.toString(index));
+    int maxIndex;
+    maxIndex = indexOfMax(a);
+    System.out.println(maxIndex);
   }
 }

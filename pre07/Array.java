@@ -12,13 +12,13 @@ public class Array {
     return values;
   }
 
-  public static int[] histogram(int[] counts, int scores){
-    int[] counter = new int[100];
-    //int score = 0;
-    //for (int score : counts) { (this is what I tried first, didn't work)
-    for (int score = 0; score < counts.length; score++) {
-      //counter[scores]++; (this is what I tried first and didn't work)
-      counter[score] = score;
+  public static int[] histogram(int[] scores, int n){
+    int[] counter = new int[n];
+    //int[] scores = new int[n];
+    for (int score : scores) { //(this is what I tried first, didn't work)
+    //for (int score = 0; score < counts.length; score++) {
+      counter[score]++; //(this is what I tried first and didn't work)
+      //counter[score] = counter[score]++;
     }
     return counter;
   }
@@ -40,9 +40,9 @@ public class Array {
     
     System.out.println("Exercise 8.1.2");
     int[] counts = new int[100];
-    histogram(counts, 99);
+    //histogram(counts, 99);
     int[] counter;
-    counter = histogram(counts, 99);
+    counter = histogram(counts, 100);
     //int score = 1;
     System.out.println(Arrays.toString(counter));
   
