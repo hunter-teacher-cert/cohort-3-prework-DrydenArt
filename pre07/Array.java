@@ -15,17 +15,17 @@ public class Array {
   public static int[] histogram(int[] counts, int scores){
     int[] counter = new int[100];
     //int score = 0;
-    for (int score : counts) {
-      counter[scores]++;
+    //for (int score : counts) { (this is what I tried first, didn't work)
+    for (int score = 0; score < counts.length; score++) {
+      //counter[scores]++; (this is what I tried first and didn't work)
+      counter[score] = score;
     }
     return counter;
   }
-
-
+  
   public static void main(String[] args) {
     System.out.println("Exercise 8.1.1 from Think Java, page 135");
-    double[] a;
-    a = new double [5];
+    double[] a = new double [5];
     double power = 2.0;
     a[0] = 1.0;
     a[1] = 2.0;
@@ -46,6 +46,7 @@ public class Array {
     //int score = 1;
     System.out.println(Arrays.toString(counter));
   
+    //histogram with enhanced loop, most efficient, page 133 T.J.
 
     //int[] counts = new int[100];
     //for (int score : scores) {
