@@ -34,7 +34,7 @@ public class Array {
     a[4] = 5.0;
     System.out.println(Arrays.toString(a));
     powArray(a, 2.0);
-    double[] values;//this stored the return values, declaring the var
+    double[] values;//this stored the return values, declaring the variable
     values = powArray(a, 2.0);//this is how it is assigned to the method
     System.out.println(Arrays.toString(values));
     

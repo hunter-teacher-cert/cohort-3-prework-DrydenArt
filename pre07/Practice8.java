@@ -34,7 +34,7 @@ public class Practice8 {
     return total;
   }
   
-  //
+  //creates an int array and fills it with random numbers between 0-99 p 130 T.J.
   public static int[] randomArray(int size) {
     Random random = new Random();
     int[] a = new int[size];

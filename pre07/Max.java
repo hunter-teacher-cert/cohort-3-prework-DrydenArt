@@ -28,10 +28,9 @@ public class Max {
     System.out.println("Exercise 8.4, page 137 of Think Java:");
     int[] a = new int[3];
     //int index;
-    a[0] = 1;
-    a[1] = 2;
-    a[2] = 3;
-    //indexOfMax(a); //how to I call the method: a? 3?
+    a[0] = 5;
+    a[1] = 22;
+    a[2] = 16;
     //int index = 0; //I don't know if I need this, it keeps causing issues
     int maxIndex;
     maxIndex = indexOfMax(a);
