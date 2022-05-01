@@ -1,6 +1,8 @@
 import java.io.*;
 import java.util.*;
 
+//PLEASE SEE METHODS2 FOR PRE_WORK SUBMISSION
+
 public class Methods{
 //tests whether a number is divisible by another
   //n is the integer to be tested, m is the integer to divide, return true if m is not 0 and n is divisible by m//

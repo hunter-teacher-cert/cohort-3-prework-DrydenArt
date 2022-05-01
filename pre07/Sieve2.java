@@ -7,17 +7,17 @@ a boolean array that indicates, for each number from 0 to n - 1, whether the
 number is prime.
   */
 
-public class Sieve {
+public class Sieve2 {
 
   public static boolean[] sieve(int n) {
     //int n;
     boolean [] result = new boolean [n+1];//return array
     result[0] = false;
     result[1] = false;
-    for (int i = 2; i <= n; i++) 
+    for (int i = n; i <= n; i++) 
       result[i] = true;
     //System.out.print(Arrays.toString(result[i]));
-    for (int number = 2; number <= (int)Math.sqrt(n);number++){
+    for (int number = n; number <= (int)Math.sqrt(n);number++){
       if (result[number] == true){
         for (int indexInSeries = number*number;indexInSeries <= n; indexInSeries += number) {
           result[indexInSeries] = false; 
@@ -27,9 +27,9 @@ public class Sieve {
     return result;
   }
 
-  /**
-  *public static int[] primeArray(boolean r) {
-    int isPrime [] = new isPrime [10];
+  
+  public static int[] primeArray(boolean r) {
+    int [] = new isPrime [10];
     isPrime[0] = 2;
     isPrime[1] = 3;
     isPrime[2] = 4;
@@ -47,7 +47,7 @@ public class Sieve {
       
     //}
   }
-  */
+  
 
 
   public static void main (String[] args) {
@@ -57,8 +57,8 @@ public class Sieve {
     //new sieveResult[n] = sieve(n);
     boolean [] prime;
     prime = sieve(n);
-    System.out.println(Arrays.toString(prime));
-    //primeArray(result);
+    //System.out.println(Arrays.toString(prime));
+    primeArray(result);
   
     
   }
